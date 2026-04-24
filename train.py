@@ -30,7 +30,7 @@ modelo_lr = Pipeline([
 modelo_lr.fit(x_train, y_train)
 y_pred_lr = modelo_lr.predict(x_test)
 
-# Métricas del modelo de regresión lineal
+# Métricas regresión lineal
 mse_lr = mean_squared_error(y_test, y_pred_lr)
 mae_lr = mean_absolute_error(y_test, y_pred_lr)
 r2_lr  = r2_score(y_test, y_pred_lr)
@@ -43,7 +43,7 @@ modelo_knn = Pipeline([
 modelo_knn.fit(x_train, y_train)
 y_pred_knn = modelo_knn.predict(x_test)  # ídem
 
-# Métricas del modelo de KNN
+# Métricas KNN
 mse_knn = mean_squared_error(y_test, y_pred_knn)
 mae_knn = mean_absolute_error(y_test, y_pred_knn)
 r2_knn  = r2_score(y_test, y_pred_knn)
@@ -55,7 +55,7 @@ modelo_dt = Pipeline([
 modelo_dt.fit(x_train, y_train)
 y_pred_dt = modelo_dt.predict(x_test)
 
-# Métricas del modelo de árbol de decisión
+# Métricas árbol de decisión
 mse_dt = mean_squared_error(y_test, y_pred_dt)
 mae_dt = mean_absolute_error(y_test, y_pred_dt)
 r2_dt  = r2_score(y_test, y_pred_dt)
